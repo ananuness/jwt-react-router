@@ -25,6 +25,10 @@ export const Routes = () => {
     },
     {
       path: '/login',
+      element: <h1>Login</h1>,
+    },
+    {
+      path: '/login-auth',
       element: <Login />,
     },
   ];
