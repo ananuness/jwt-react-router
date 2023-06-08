@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { useAuth } from '../provider/AuthProvider';
 import { ProtectedRoute } from './ProtectedRoute';
+import { Login } from '../pages/Login';
+import { Logout } from '../pages/Logout';
 
 export const Routes = () => {
   const { token } = useAuth();
@@ -8,22 +10,22 @@ export const Routes = () => {
   const routesForPublic = [
     {
       path: '/service',
-      element: <div>Service</div>,
+      element: <h1>Service</h1>,
     },
     {
       path: '/about-us',
-      element: <div>About Us</div>,
+      element: <h1>About Us</h1>,
     },
   ];
 
   const routesForNotAuthenticatedOnly = [
     {
       path: '/',
-      element: <div>Home Page</div>,
+      element: <h1>Home Page</h1>,
     },
     {
       path: '/login',
-      element: <div>Login</div>,
+      element: <Login />,
     },
   ];
   
@@ -34,15 +36,15 @@ export const Routes = () => {
       children: [
         {
           path: '/',
-          element: <div>User Home Page</div>,
+          element: <h1 className="auth-path">User Home Page</h1>,
         },
         {
           path: '/profile',
-          element: <div>User Profile</div>,
+          element: <h1 className="auth-path">User Profile</h1>,
         },
         {
           path: '/logout',
-          element: <div>Logout</div>,
+          element: <Logout className="auth-path" />,
         },
       ],
     },
@@ -51,7 +53,7 @@ export const Routes = () => {
   const router = createBrowserRouter([
     ...routesForPublic,
     ...(!token ? routesForNotAuthenticatedOnly : []),
-    ...routesForAuthenticatedOnly,
+    ...routesForAuthenticatedOnly
   ]);
 
   return <RouterProvider router={router} />;
