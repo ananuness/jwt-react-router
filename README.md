@@ -6,21 +6,22 @@
   como proteger rotas autenticadas e utilizar a biblioteca axios para 
   fazer solicitações de API com o token de autenticação. 🗝️
 </p>
-
+ 
 <p align="center">
- <a href="#📝-pre-requisitos">Pré-requisitos</a> • 
- <a href="#🎲-rodando-a-demo">Rodando a demo</a> •
- <a href="#🧩-explicando-o-codigo">Explicando o código</a> •
- <a href="🛡️-aprimorando-a-seguranca">Aprimorando a segurança</a>
+  <a href="#memo-pré-requisitos">Pré-requisitos</a> •
+  <a href="#game_die-rodando-a-demo">Rodando a demo</a> •
+  <a href="#jigsaw-explicando-o-codigo">Explicando o código</a> •
+  <a href="#microscope-fluxo-das-rotas">Fluxo das rotas</a> •
+  <a href="#shield-aprimorando-a-segurança">Aprimorando a segurança</a>
 </p>
 
-### 📝 Pré-requisitos 
+### :memo: Pré-requisitos 
 
 Antes de começar, você vai precisar ter instalado em sua máquina as 
 seguintes ferramentas: [Git](https://git-scm.com) e
 [Node.js](https://nodejs.org/en/).
 
-### 🎲 Rodando a demo
+### :game_die: Rodando a demo
 
 1. baixe o projeto:
 
@@ -36,7 +37,7 @@ npm i                # instalando as dependências
 npm run dev          # rodando o projeto no localhost 
 ```
 
-## Testando o fluxo das rotas
+## :microscope: Fluxo das rotas
 
 1. Assim que você visitar a aplicação na rota padrão (`/`), você verá
 o título **Home Page** do array `routesForNotAuthenticatedOnly`.
@@ -58,7 +59,7 @@ Esse fluxo demonstra o processo de login e de logout, as transições
 entre os estados de autenticado/não autenticado e suas respectivas
 rotas de acesso.
 
-## 🧩 Explicando o código
+## :jigsaw: Explicando o código
 
 #### `/provider/AuthProvider.jsx` 
 
@@ -93,7 +94,7 @@ públicas, já que as outras só fazem sentido para os não logados.
 > [Aqui](https://dev.to/sanjayttg/jwt-authentication-in-react-with-react-router-1d03?utm_source=reactdigest&utm_medium&utm_campaign=1655) 
 > você encontra a fonte para o artigo da demo original.
 
-## 🛡️ Aprimorando a segurança
+## :shield: Aprimorando a segurança
 
 Existem três opções comuns na hora de armazenar um token JWT nas 
 nossas aplicações: *local storage*, *session storage* e *cookies*, mas 
