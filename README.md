@@ -10,7 +10,7 @@
 <p align="center">
   <a href="#memo-pré-requisitos">Pré-requisitos</a> •
   <a href="#game_die-rodando-a-demo">Rodando a demo</a> •
-  <a href="#jigsaw-explicando-o-codigo">Explicando o código</a> •
+  <a href="#mag-explicando-o-codigo">Explicando o código</a> •
   <a href="#microscope-fluxo-das-rotas">Fluxo das rotas</a> •
   <a href="#shield-aprimorando-a-segurança">Aprimorando a segurança</a>
 </p>
@@ -59,7 +59,7 @@ Esse fluxo demonstra o processo de login e de logout, as transições
 entre os estados de autenticado/não autenticado e suas respectivas
 rotas de acesso.
 
-## :jigsaw: Explicando o código
+## :mag: Explicando o código
 
 #### `/provider/AuthProvider.jsx` 
 
