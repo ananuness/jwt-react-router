@@ -11,7 +11,7 @@
   <a href="#memo-pré-requisitos">Pré-requisitos</a> •
   <a href="#game_die-rodando-a-demo">Rodando a demo</a> •
   <a href="#microscope-fluxo-das-rotas">Fluxo das rotas</a> •
-  <a href="#mag-explicando-o-codigo">Explicando o código</a> •
+  <a href="#mag-explicando-o-código">Explicando o código</a> •
   <a href="#shield-aprimorando-a-segurança">Aprimorando a segurança</a>
 </p>
 
