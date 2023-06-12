@@ -10,8 +10,8 @@
 <p align="center">
   <a href="#memo-pré-requisitos">Pré-requisitos</a> •
   <a href="#game_die-rodando-a-demo">Rodando a demo</a> •
-  <a href="#mag-explicando-o-codigo">Explicando o código</a> •
   <a href="#microscope-fluxo-das-rotas">Fluxo das rotas</a> •
+  <a href="#mag-explicando-o-codigo">Explicando o código</a> •
   <a href="#shield-aprimorando-a-segurança">Aprimorando a segurança</a>
 </p>
 
@@ -59,9 +59,9 @@ Esse fluxo demonstra o processo de login e de logout, as transições
 entre os estados de autenticado/não autenticado e suas respectivas
 rotas de acesso.
 
-## :mag: Explicando o código
+### :mag: Explicando o código
 
-#### `/provider/AuthProvider.jsx` 
+##### `/provider/AuthProvider.jsx` 
 
 Em resumo, esse código configura o contexto de autenticação usando a 
 *Context API* do React. Ele fornece o `token` de autenticação e a 
@@ -69,7 +69,7 @@ função `updateToken` para componentes filhos por meio do contexto.
 Isto também garante que o cabeçalho de autorização padrão no axios 
 seja atualizado com o token de autenticação sempre que ele mudar.
 
-#### `/routes/ProtectedRoute.jsx`
+##### `/routes/ProtectedRoute.jsx`
 
 O componente ProtectedRoute serve como um guarda para rotas 
 autenticadas. Se o usuário não estiver autenticado, ele será 
@@ -80,7 +80,7 @@ facilmente proteger rotas específicas e controlar o acesso com base no
 status de autenticação do usuário, proporcionando uma experiência de 
 navegação mais segura.
 
-#### `/routes/index.jsx`
+##### `/routes/index.jsx`
 
 Esse componente é o ponto de entrada para as rotas configuradas. Foram 
 definidas as rotas públicas (`routesForPublic`), privadas 
